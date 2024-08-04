@@ -30,12 +30,12 @@ class Subject extends Model
 
     public function modality(): BelongsTo
     {
-        return $this->belongsTo(SubjectModality::class);
+        return $this->belongsTo(SubjectModality::class, 'subject_modality_id');
     }
 
     public function type(): BelongsTo
     {
-        return $this->belongsTo(SubjectType::class);
+        return $this->belongsTo(SubjectType::class, 'subject_type_id');
     }
 
     public function schedule(): BelongsTo
