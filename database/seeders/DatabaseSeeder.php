@@ -3,8 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use App\Models\Weekdays;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -26,6 +25,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call(SubjectModalitySeeder::class);
 
-        $this->call(Weekdays::class);
+        $this->call(WeekdaysSeeder::class);
     }
 }
