@@ -15,32 +15,32 @@ class WeekdaysSeeder extends Seeder
     {
         Weekdays::create([
             'name' => 'lunes',
-            'abbreviation' => 'lu'
+            'abbreviation' => 'LU'
         ]);
 
         Weekdays::create([
             'name' => 'martes',
-            'abbreviation' => 'ma'
+            'abbreviation' => 'MA'
         ]);
 
         Weekdays::create([
             'name' => 'miercoles',
-            'abbreviation' => 'mi'
+            'abbreviation' => 'MI'
         ]);
 
         Weekdays::create([
             'name' => 'jueves',
-            'abbreviation' => 'ju'
+            'abbreviation' => 'JU'
         ]);
 
         Weekdays::create([
             'name' => 'viernes',
-            'abbreviation' => 'vi'
+            'abbreviation' => 'VI'
         ]);
 
         Weekdays::create([
             'name' => 'sabado',
-            'abbreviation' => 'sa'
+            'abbreviation' => 'SA'
         ]);
     }
 }

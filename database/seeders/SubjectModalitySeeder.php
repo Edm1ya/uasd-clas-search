@@ -14,15 +14,15 @@ class SubjectModalitySeeder extends Seeder
     public function run(): void
     {
         SubjectModality::create([
-            'name' => 'in person'
+            'name' => 'Presencial'
         ]);
 
         SubjectModality::create([
-            'name' => 'blended'
+            'name' => 'Semi Presencial'
         ]);
 
         SubjectModality::create([
-            'name' => 'virtual'
+            'name' => 'Virtual o por Internet'
         ]);
     }
 }

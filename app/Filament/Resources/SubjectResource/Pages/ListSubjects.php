@@ -5,6 +5,8 @@ namespace App\Filament\Resources\SubjectResource\Pages;
 use App\Filament\Resources\SubjectResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
+use Filament\Actions\ImportAction;
+use App\Filament\Imports\SubjectImporter;
 
 class ListSubjects extends ListRecords
 {
@@ -14,6 +16,8 @@ class ListSubjects extends ListRecords
     {
         return [
             Actions\CreateAction::make(),
+            ImportAction::make('importSubjects')
+                ->importer(SubjectImporter::class)
         ];
     }
 }

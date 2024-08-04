@@ -29,8 +29,8 @@ class SubjectResource extends Resource
             ->schema([
                 Forms\Components\Section::make()
                     ->schema([
-                        Forms\Components\TextInput::make('RNC')
-                            ->label('RNC')
+                        Forms\Components\TextInput::make('NRC')
+                            ->label('NRC')
                             ->required(),
                         Forms\Components\TextInput::make('key')
                             ->required(),
@@ -64,15 +64,16 @@ class SubjectResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('RNC')
-                    ->label('RNC'),
+                TextColumn::make('NRC')
+                    ->label('NRC'),
                 TextColumn::make('key'),
                 TextColumn::make('name'),
                 TextColumn::make('section'),
                 TextColumn::make('modality.name'),
                 TextColumn::make('campus'),
                 TextColumn::make('type.name'),
-                TextColumn::make('schedule.name'),
+                TextColumn::make('schedule.start_time'),
+                TextColumn::make('schedule.end_time'),
                 TextColumn::make('classroom'),
                 TextColumn::make('days.name'),
 
