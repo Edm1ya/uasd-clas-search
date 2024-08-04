@@ -22,5 +22,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call(SubjectTypeSeeder::class);
+
+        $this->call(SubjectModalitySeeder::class);
     }
 }
